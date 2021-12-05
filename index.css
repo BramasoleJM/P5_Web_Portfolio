@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.clearfix:before,.clearfix:after {
+    content:"";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom:1;
+}
+
+body {
+    background: #fff;
+    color:#333;
+}
+
+.container {
+    max-width: 1920px;
+    margin: 0px auto;
+    padding: 40px 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 600px 250px 450px 25% 25% 450px;
+    grid-template-areas: 
+    "header header header"
+    "p5-classify p5-classify p5-classify"
+    "author author author"
+    "p5-work1 p5-work2 p5-work3"
+    "p5-work4 p5-work5 p5-work6"
+    "footer footer footer";
+    grid-gap: 2%;
+}
+
+header{
+    grid-area: header;
+    background-color: rgb(87, 87, 87);
+}
+
+.p5-classify {
+    grid-area: p5-classify;
+    background-color: rgb(87, 87, 87);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content:center;
+}
+
+.p5-classify > div {
+    background-color: rgb(158, 158, 158);
+    width: 22.5%;
+}
+
+.p5-classify > .p5-basic {
+    margin-right: 40px;
+}
+
+.p5-classify > .p5-particle {
+    margin-right: 40px;
+}
+
+.p5-classify > .p5-ml {
+    margin-right: 40px;
+}
+
+.author {
+    grid-area: author;
+    background-color: rgb(87, 87, 87);
+}
+
+.p5-work1 {
+    grid-area: p5-work1;
+    background-color: rgb(87, 87, 87);
+}
+
+.p5-work2 {
+    grid-area: p5-work2;
+    background-color: rgb(87, 87, 87);
+}
+
+.p5-work3 {
+    grid-area: p5-work3;
+    background-color: rgb(87, 87, 87);
+}
+
+.p5-work4 {
+    grid-area: p5-work4;
+    background-color: rgb(87, 87, 87);
+}
+
+.p5-work5 {
+    grid-area: p5-work5;
+    background-color: rgb(87, 87, 87);
+}
+
+.p5-work6 {
+    grid-area: p5-work6;
+    background-color: rgb(87, 87, 87);
+}
+
+footer {
+    grid-area: footer;
+    background-color: rgb(87, 87, 87);
+}
+
+@media only screen and (max-width: 750px) and (min-width:520px) {
+    .container {
+        margin: 0px auto;
+        padding: 24px 4%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 650px 400px 300px 15% 15% 15% 15% 15% 15% 300px;
+        grid-template-areas: 
+        "header"
+        "p5-classify"
+        "author"
+        "p5-work1"
+        "p5-work2"
+        "p5-work3"
+        "p5-work4"
+        "p5-work5"
+        "p5-work6"
+        "footer";
+    }
+
+    .p5-classify {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content:center;
+    }
+
+    .p5-classify > div {
+        width: 220px;
+        height: 190px;
+    }
+
+    .p5-classify > .p5-basic {
+        margin-right: 40px;
+        margin-bottom: 20px;
+    }
+    
+    .p5-classify > .p5-particle {
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+    
+    .p5-classify > .p5-ml {
+        margin-right: 40px;
+    }
+}
+
+@media only screen and (max-width: 520px) and (min-width: 370px) {
+    .container {
+        margin: 0px auto;
+        padding: 24px 4%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 650px 400px 300px 15% 15% 15% 15% 15% 15% 300px;
+        grid-template-areas: 
+        "header"
+        "p5-classify"
+        "author"
+        "p5-work1"
+        "p5-work2"
+        "p5-work3"
+        "p5-work4"
+        "p5-work5"
+        "p5-work6"
+        "footer";
+    }
+
+    .p5-classify {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content:center;
+    }
+
+    .p5-classify > div {
+        width: 160px;
+        height: 190px;
+    }
+
+    .p5-classify > .p5-basic {
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .p5-classify > .p5-particle {
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+    
+    .p5-classify > .p5-ml {
+        margin-right: 20px;
+    }
+}
+
+@media only screen and (max-width: 370px) {
+    .container {
+        margin: 0px auto;
+        padding: 24px 4%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 650px 400px 300px 15% 15% 15% 15% 15% 15% 300px;
+        grid-template-areas: 
+        "header"
+        "p5-classify"
+        "author"
+        "p5-work1"
+        "p5-work2"
+        "p5-work3"
+        "p5-work4"
+        "p5-work5"
+        "p5-work6"
+        "footer";
+    }
+
+    .p5-classify {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content:center;
+    }
+
+    .p5-classify > div {
+        width: 370px;
+        height: 90px;
+    }
+
+    .p5-classify > .p5-basic {
+        margin-right: 0px;
+        margin-bottom: 10px;
+    }
+    
+    .p5-classify > .p5-particle {
+        margin-right: 0px;
+        margin-bottom: 10px;
+    }
+    
+    .p5-classify > .p5-ml {
+        margin-right: 0px;
+        margin-bottom: 10px;
+    }
+}
