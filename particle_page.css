@@ -45,13 +45,13 @@ body {
     padding: 40px 10%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 600px 250px 450px 25% 25% 450px;
+    grid-template-rows: 600px 250px 25% 25% 450px 450px;
     grid-template-areas: 
     "header header header"
     "p5-classify p5-classify p5-classify"
-    "author author author"
     "p5-work1 p5-work2 p5-work3"
     "p5-work4 p5-work5 p5-work6"
+    "author author author"
     "footer footer footer";
     grid-gap: 2%;
 }
@@ -296,7 +296,7 @@ header .side-bg {
 
 .author .author-img {
     grid-area: author-img;
-    background-image: url('img/author.jpg');
+    background-image: url('img/particle-intro.png');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -585,17 +585,17 @@ footer iframe:hover {
         padding: 24px 4%;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 650px 400px 420px 15% 15% 15% 15% 15% 15% 300px;
+        grid-template-rows: 650px 400px 15% 15% 15% 15% 15% 15% 420px 300px;
         grid-template-areas: 
         "header"
         "p5-classify"
-        "author"
         "p5-work1"
         "p5-work2"
         "p5-work3"
         "p5-work4"
         "p5-work5"
         "p5-work6"
+        "author"
         "footer";
     }
 
@@ -685,17 +685,17 @@ footer iframe:hover {
         padding: 24px 4%;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 650px 400px 450px 15% 15% 15% 15% 15% 15% 300px;
+        grid-template-rows: 650px 400px 15% 15% 15% 15% 15% 15% 450px 300px;
         grid-template-areas: 
         "header"
         "p5-classify"
-        "author"
         "p5-work1"
         "p5-work2"
         "p5-work3"
         "p5-work4"
         "p5-work5"
         "p5-work6"
+        "author"
         "footer";
     }
 
@@ -802,17 +802,17 @@ footer iframe:hover {
         padding: 24px 4%;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 650px 400px 500px 15% 15% 15% 15% 15% 15% 300px;
+        grid-template-rows: 650px 400px 15% 15% 15% 15% 15% 15% 500px 300px;
         grid-template-areas: 
         "header"
         "p5-classify"
-        "author"
         "p5-work1"
         "p5-work2"
         "p5-work3"
         "p5-work4"
         "p5-work5"
         "p5-work6"
+        "author"
         "footer";
     }
 
